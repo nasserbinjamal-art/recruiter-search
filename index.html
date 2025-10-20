@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasser Recruiter Tool</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      .dark-mode { background-color: #121212; color: white; }
+      .copy-btn { margin-left: 10px; cursor: pointer; }
+      footer { margin-top: 40px; text-align: center; font-size: 0.9em; color: gray; }
+    </style>
+    </head>
+    
+
+    <body>
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <div id="recent-searches"><h3>Recent Searches</h3><ul id='recent-list'></ul></div>
+    
+    <div class="container">
+        <h1>Recruiter Search Tool</h1>
+        <form id="searchForm">
+            <label for="job">Job Title:</label>
+            <input type="text" id="job" name="job" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="keywords">Keywords (comma-separated):</label>
+            <input type="text" id="keywords" name="keywords">
+
+            <button type="submit">Generate Search Links</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+
+    <footer>
+      Built by Nasser Jamal | <a href='https://www.linkedin.com/in/nasserjamal/' target='_blank'>LinkedIn</a>
+    </footer>
+    </body>
+    
+</html>
